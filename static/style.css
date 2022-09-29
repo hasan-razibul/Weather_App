@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500&family=Righteous&family=Space+Grotesk:wght@300&display=swap');
+
+.my-weather-container{
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+
+.form-control{
+    width: 40vw;
+}
+
+.card-header{
+    
+    background-color: rgb(186, 203, 223);
+}
+
+
+.my-card-header{
+    
+    
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    
+   color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.data-title{
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(74, 74, 74);
+}
+.actual-data{
+    
+    
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    
+    padding-left: 1rem;
+    
+}
+
+
+
+

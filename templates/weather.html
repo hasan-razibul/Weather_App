@@ -1,0 +1,136 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ 
+
+    
+
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+<div class="row my-weather-container">
+    <div class="col">
+        <form action="#" method="post">
+            <div class="p-5">
+                <div class="mb-3">
+                    <label class="form-label">Enter City Name: </label>
+                    <input type="text" class="form-control" name="city" required>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+        </form>
+
+    </div>
+
+
+
+    <div class="col">
+       
+
+        <div class="p-5">
+            <div class="card" style="width: 100%;">
+                <div class="card-header" style="text-align:center;">
+                    <h3 class="my-card-header">Weather</h3>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="data-title">Name
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span
+                            class="actual-data"> {{name}} </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title">Description &nbsp;&nbsp;&nbsp;:</span><span class="actual-data"> {{description}}
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title">Temp
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span
+                            class="actual-data"> {{temp}}°C </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title">Feels Like &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="actual-data">
+                            {{feels_like}}°C </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title">Max Temp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="actual-data"> {{temp_max}}°C
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title">Min Temp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="actual-data">
+                            {{temp_min}} °C</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title">Humidity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="actual-data">
+                            {{humidity}}% </span>
+                
+                    </li>
+                    <li class="list-group-item">
+                        <span class="data-title"> Pressure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span><span class="actual-data">
+                            {{pressure}} hPa</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<!-- <center>
+
+    <h1>Whats the weather!</h1>
+    <form action="#" method = "post">
+        
+        City : <input type="text" name="city" required>
+        <p><input type="submit" value="submit"></p>
+
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+        <p>{{temp}}</p>
+        <p>{{feels_like}}</p>
+        <p>{{temp_max}}</p>
+        <p>{{temp_min}}</p>
+        <p>{{humidity}}</p>
+        <p>{{pressure}}</p>
+       
+        
+
+    </form>
+
+</center> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
